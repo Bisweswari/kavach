@@ -19,7 +19,7 @@ function Registration() {
           {/* Register Button */}
           <div className="absolute -top-6 sm:-top-4 md:-top-3 left-1/2 -translate-x-1/2">
             <a
-              href="https://forms.gle/NJFqTPFkpq5owQ2F8"
+              href="https://forms.gle/ZMtMunDf55TqYF9p8"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 sm:px-10 md:px-14 py-3 md:py-4
@@ -47,7 +47,7 @@ function Registration() {
             <p>
               🔗 Google Form Link:{" "}
               <a
-                href="https://forms.gle/NJFqTPFkpq5owQ2F8"
+                href="https://forms.gle/ZMtMunDf55TqYF9p8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 underline hover:text-pink-600 transition"
