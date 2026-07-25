@@ -9,7 +9,7 @@ function Overview() {
           <span className="text-pink-400 underline decoration-gray-400 underline-offset-4">
             OVERVIEW
           </span>
-          <h2 className="text-4xl font-bold mt-4">OVERVIEW OF THE COURSE</h2>
+          <h2 className="text-4xl font-bold mt-4">OVERVIEW OF THE SOCIETY</h2>
         </div>
 
         {/* Glass Container */}
@@ -57,7 +57,7 @@ function Overview() {
               <img
                 src="/scam.jpg"
                 alt="Workshop Image"
-                className="w-full max-w-md h-[200px] md:h-[300px] lg:h-[400px] rounded-3xl shadow-2xl 
+                className="w-full max-w-md h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl shadow-2xl 
                            border border-white/20 
                            hover:scale-105 transition duration-500"
               />
