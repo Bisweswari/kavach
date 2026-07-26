@@ -135,10 +135,9 @@ function Details() {
               </span>
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {/* K1 */}
-
-              <div className="rounded-2xl border border-cyan-400/30 bg-cyan-500/10 p-6">
+            <div className="flex flex-col md:flex-row items-center justify-center">
+              {/* ================= KAVACH 1 ================= */}
+              <div className="w-full md:w-72 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 p-6 text-center">
                 <div className="text-4xl mb-4">🛡️</div>
 
                 <h4 className="text-xl font-bold text-cyan-300 mb-3">
@@ -152,9 +151,29 @@ function Details() {
                 </p>
               </div>
 
-              {/* K2 */}
+              {/* Arrow */}
+              <div className="mx-6 hidden md:flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12 text-cyan-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 12h14m-5-5 5 5-5 5"
+                  />
+                </svg>
+              </div>
 
-              <div className="rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-6">
+              {/* Mobile Arrow */}
+              <div className="md:hidden text-4xl text-cyan-300 my-3">↓</div>
+
+              {/* ================= KAVACH 2 ================= */}
+              <div className="w-full md:w-72 rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-6 text-center">
                 <div className="text-4xl mb-4">⚔️</div>
 
                 <h4 className="text-xl font-bold text-emerald-300 mb-3">
@@ -170,9 +189,29 @@ function Details() {
                 </p>
               </div>
 
-              {/* K3 */}
+              {/* Arrow */}
+              <div className="mx-6 hidden md:flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12 text-emerald-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 12h14m-5-5 5 5-5 5"
+                  />
+                </svg>
+              </div>
 
-              <div className="rounded-2xl border border-purple-400/30 bg-purple-500/10 p-6">
+              {/* Mobile Arrow */}
+              <div className="md:hidden text-4xl text-emerald-300 my-3">↓</div>
+
+              {/* ================= KAVACH 3 ================= */}
+              <div className="w-full md:w-72 rounded-2xl border border-purple-400/30 bg-purple-500/10 p-6 text-center">
                 <div className="text-4xl mb-4">🚀</div>
 
                 <h4 className="text-xl font-bold text-purple-300 mb-3">
@@ -193,8 +232,8 @@ function Details() {
           <div
             data-aos="fade-up"
             className="bg-white/10 backdrop-blur-xl border border-white/20
-             p-8 rounded-3xl shadow-2xl hover:scale-[1.01]
-             transition duration-500 mt-10"
+  p-8 rounded-3xl shadow-2xl hover:scale-[1.01]
+  transition duration-500 mt-10"
           >
             <h3 className="text-2xl font-semibold text-cyan-300 mb-2">
               3.1 KAVACH-1 [K1] — Foundational
@@ -203,14 +242,14 @@ function Details() {
             <p className="text-gray-300 mb-8">(Open to all UG/PG)</p>
 
             <div className="overflow-x-auto rounded-2xl border border-white/20">
-              <table className="w-full text-left border-collapse">
+              <table className="w-full border-collapse">
                 <thead className="bg-cyan-500/20">
                   <tr>
-                    <th className="px-6 py-4 text-cyan-300 font-semibold border-b border-white/20 w-1/4">
+                    <th className="w-[28%] px-6 py-4 text-left text-cyan-300 font-semibold border-b border-white/20">
                       Module
                     </th>
 
-                    <th className="px-6 py-4 text-cyan-300 font-semibold border-b border-white/20">
+                    <th className="w-[72%] px-6 py-4 text-left text-cyan-300 font-semibold border-b border-white/20">
                       Coverage
                     </th>
                   </tr>
@@ -218,59 +257,63 @@ function Details() {
 
                 <tbody className="text-gray-200">
                   <tr className="border-b border-white/10">
-                    <td className="px-6 py-5 font-medium text-white">
+                    <td className="align-top px-6 py-5 font-semibold text-white">
                       Security Fundamentals
                     </td>
 
-                    <td className="px-6 py-5 leading-7">
+                    <td className="align-top px-6 py-5 leading-7 text-justify">
                       CIA triad, threat modelling, OWASP Top 10, networking
                       (TCP/IP, DNS, routing), Linux/Windows internals,
-                      cryptography basics
+                      cryptography basics.
                     </td>
                   </tr>
 
                   <tr className="border-b border-white/10">
-                    <td className="px-6 py-5 font-medium text-white">
+                    <td className="align-top px-6 py-5 font-semibold text-white">
                       Ethical Hacking Basics
                     </td>
 
-                    <td className="px-6 py-5 leading-7">
-                      Reconnaissance, scanning (Nmap), vulnerability assessment
-                      (Nessus/OpenVAS), basic exploitation in a legal lab range
+                    <td className="align-top px-6 py-5 leading-7 text-justify">
+                      Reconnaissance, scanning using Nmap, vulnerability
+                      assessment (Nessus/OpenVAS), and basic exploitation in a
+                      controlled, authorized laboratory environment.
                     </td>
                   </tr>
 
                   <tr className="border-b border-white/10">
-                    <td className="px-6 py-5 font-medium text-white">
+                    <td className="align-top px-6 py-5 font-semibold text-white">
                       Defensive Basics
                     </td>
 
-                    <td className="px-6 py-5 leading-7">
-                      SIEM concepts, log analysis, firewall/IDS-IPS
-                      fundamentals, endpoint hardening, intro to SOC workflows
+                    <td className="align-top px-6 py-5 leading-7 text-justify">
+                      SIEM concepts, log analysis, firewall and IDS/IPS
+                      fundamentals, endpoint hardening, and an introduction to
+                      Security Operations Center (SOC) workflows.
                     </td>
                   </tr>
 
                   <tr className="border-b border-white/10">
-                    <td className="px-6 py-5 font-medium text-white">
+                    <td className="align-top px-6 py-5 font-semibold text-white">
                       Governance &amp; Ethics
                     </td>
 
-                    <td className="px-6 py-5 leading-7">
-                      IT Act 2000 &amp; amendments, CERT-In guidelines,
-                      responsible disclosure, professional ethics, DPDP Act
-                      basics
+                    <td className="align-top px-6 py-5 leading-7 text-justify">
+                      Information Technology Act 2000 and its amendments,
+                      CERT-In guidelines, responsible vulnerability disclosure,
+                      professional ethics, and the basics of the Digital
+                      Personal Data Protection (DPDP) Act.
                     </td>
                   </tr>
 
                   <tr>
-                    <td className="px-6 py-5 font-medium text-white">
+                    <td className="align-top px-6 py-5 font-semibold text-white">
                       Capstone
                     </td>
 
-                    <td className="px-6 py-5 leading-7">
-                      Team CTF (Jeopardy-style) + written incident report
-                      exercise
+                    <td className="align-top px-6 py-5 leading-7 text-justify">
+                      Team-based Capture the Flag (CTF) challenge followed by
+                      the preparation of a professional incident response
+                      report.
                     </td>
                   </tr>
                 </tbody>
@@ -279,12 +322,11 @@ function Details() {
           </div>
 
           {/* ===================== KAVACH-2 ===================== */}
-
           <div
             data-aos="fade-up"
             className="bg-white/10 backdrop-blur-xl border border-white/20
-             p-8 rounded-3xl shadow-2xl hover:scale-[1.01]
-             transition duration-500 mt-10"
+  p-8 rounded-3xl shadow-2xl hover:scale-[1.01]
+  transition duration-500 mt-10"
           >
             <h3 className="text-2xl font-semibold text-emerald-300 mb-2">
               3.2 KAVACH-2 [K2] — Core Specialisation
@@ -292,84 +334,121 @@ function Details() {
 
             <p className="text-gray-300 mb-8">(Choose 1–2 verticals)</p>
 
-            <div className="grid lg:grid-cols-3 gap-6">
-              {/* B1 */}
-              <div className="rounded-2xl bg-emerald-500/10 border border-emerald-400/30 p-6">
-                <h4 className="text-xl font-semibold text-emerald-300 mb-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+              {/* ================= B1 ================= */}
+              <div className="rounded-2xl bg-emerald-500/10 border border-emerald-400/30 p-6 flex flex-col h-full">
+                <h4 className="text-lg sm:text-xl font-semibold text-emerald-300 mb-3 sm:mb-6 min-h-0 sm:min-h-[72px]">
                   B1. Offensive Security / Red Teaming
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>
-                    Web app pentesting (Burp Suite, SQLi/XSS/SSRF/IDOR), API
-                    security testing
-                  </li>
+                <div className="space-y-5 text-gray-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Web application penetration testing using Burp Suite, SQL
+                      Injection, XSS, SSRF, IDOR and API security assessment.
+                    </p>
+                  </div>
 
-                  <li>
-                    Active Directory attacks, privilege escalation, lateral
-                    movement (Windows/Linux)
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Active Directory attacks, privilege escalation and lateral
+                      movement in Windows and Linux environments.
+                    </p>
+                  </div>
 
-                  <li>
-                    Malware analysis basics, C2 frameworks in isolated lab
-                    (educational use only)
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Malware analysis fundamentals and command-and-control
+                      frameworks inside isolated laboratory environments.
+                    </p>
+                  </div>
 
-                  <li>
-                    Report writing to professional pentest-report standards
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Professional penetration testing report writing and
+                      remediation recommendations.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* B2 */}
-              <div className="rounded-2xl bg-cyan-500/10 border border-cyan-400/30 p-6">
-                <h4 className="text-xl font-semibold text-cyan-300 mb-5">
+              {/* ================= B2 ================= */}
+              <div className="rounded-2xl bg-cyan-500/10 border border-cyan-400/30 p-6 flex flex-col h-full">
+                <h4 className="text-lg sm:text-xl font-semibold text-emerald-300 mb-3 sm:mb-6 min-h-0 sm:min-h-[72px]">
                   B2. Defensive Security / Blue Team &amp; SOC Operations
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>
-                    SIEM engineering (Wazuh/Splunk/ELK), detection engineering,
-                    Sigma rules
-                  </li>
+                <div className="space-y-5 text-gray-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      SIEM engineering using Wazuh, Splunk and ELK Stack,
+                      detection engineering and Sigma rule development.
+                    </p>
+                  </div>
 
-                  <li>
-                    Threat intelligence (MITRE ATT&amp;CK mapping, IOC/TTP
-                    analysis)
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Threat intelligence, MITRE ATT&amp;CK mapping, IOC
+                      analysis and adversary behaviour profiling.
+                    </p>
+                  </div>
 
-                  <li>
-                    Incident response lifecycle, tabletop exercises, digital
-                    forensics fundamentals (Autopsy, Volatility)
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Incident response lifecycle, tabletop exercises and
+                      digital forensics using Autopsy and Volatility.
+                    </p>
+                  </div>
 
-                  <li>
-                    Cloud security basics (AWS/Azure IAM misconfig,
-                    container/K8s security)
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Cloud security fundamentals covering AWS, Azure IAM,
+                      containers and Kubernetes security.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* B3 */}
-              <div className="rounded-2xl bg-purple-500/10 border border-purple-400/30 p-6">
-                <h4 className="text-xl font-semibold text-purple-300 mb-5">
+              {/* ================= B3 ================= */}
+              <div className="rounded-2xl bg-purple-500/10 border border-purple-400/30 p-6 flex flex-col h-full">
+                <h4 className="text-lg sm:text-xl font-semibold text-emerald-300 mb-3 sm:mb-6 min-h-0 sm:min-h-[72px]">
                   B3. Governance, Risk &amp; Compliance (GRC) / Digital
                   Forensics
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>ISO 27001, NIST CSF, risk assessment frameworks</li>
+                <div className="space-y-5 text-gray-200">
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      ISO 27001, NIST Cybersecurity Framework and enterprise
+                      risk assessment methodologies.
+                    </p>
+                  </div>
 
-                  <li>
-                    Compliance mapping for Indian regulatory context (CERT-In,
-                    sectoral guidelines, DPDP Act)
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Compliance mapping for CERT-In, sector-specific
+                      regulations and the Digital Personal Data Protection Act.
+                    </p>
+                  </div>
 
-                  <li>
-                    Forensic evidence handling and chain of custody, mock
-                    court/expert-testimony exercise
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-2">●</span>
+                    <p className="flex-1 text-justify leading-7">
+                      Digital forensic evidence collection, chain of custody and
+                      mock courtroom expert testimony exercises.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -395,125 +474,189 @@ function Details() {
               these as unrelated add-ons.
             </p>
 
-            <div className="grid lg:grid-cols-2 gap-6">
-              {/* C1 */}
-              <div className="rounded-2xl bg-purple-500/10 border border-purple-400/30 p-6">
-                <h4 className="text-xl font-semibold text-purple-300 mb-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+              {/* ===================== C1 ===================== */}
+              <div className="rounded-2xl bg-purple-500/10 border border-purple-400/30 p-4 h-full flex flex-col">
+                <h4 className="text-xl font-semibold text-purple-300 mb-2 min-h-[48px]">
                   C1. Agentic AI-Based Attacks &amp; Defense
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>
-                    How agentic AI changes the threat model: autonomous
-                    multi-step attack chains, AI-orchestrated reconnaissance and
-                    social engineering, self-improving phishing content
-                  </li>
+                <div className="space-y-4 text-gray-200 leading-7">
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      How agentic AI changes the threat model: autonomous
+                      multi-step attack chains, AI-orchestrated reconnaissance
+                      and social engineering, self-improving phishing content.
+                    </p>
+                  </div>
 
-                  <li>
-                    Prompt-injection and tool-use exploitation against
-                    LLM-powered applications and agents; insecure agent-to-agent
-                    and agent-to-tool trust boundaries
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Prompt-injection and tool-use exploitation against
+                      LLM-powered applications and agents; insecure
+                      agent-to-agent and agent-to-tool trust boundaries.
+                    </p>
+                  </div>
 
-                  <li>
-                    Data/model supply-chain risks: poisoned training data,
-                    malicious plugins/tool integrations, model-extraction and
-                    inference attacks
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Data/model supply-chain risks: poisoned training data,
+                      malicious plugins, model extraction and inference attacks.
+                    </p>
+                  </div>
 
-                  <li>
-                    Defensive side: AI-assisted SOC (autonomous triage/hunting
-                    agents), guardrail design, red-teaming LLM applications,
-                    detection of AI-generated phishing/deepfake content
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      AI-assisted SOC, guardrail design, red-teaming LLM
+                      applications, and detection of AI-generated phishing and
+                      deepfake content.
+                    </p>
+                  </div>
 
-                  <li>
-                    Hands-on: build and defend a sandboxed agentic-AI
-                    application; run structured red-team exercises against it
-                    under supervision
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Hands-on: Build and defend a sandboxed agentic AI
+                      application and perform structured red-team exercises
+                      under supervision.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* C2 */}
-              <div className="rounded-2xl bg-cyan-500/10 border border-cyan-400/30 p-6">
-                <h4 className="text-xl font-semibold text-cyan-300 mb-5">
+              {/* ===================== C2 ===================== */}
+              <div className="rounded-2xl bg-cyan-500/10 border border-cyan-400/30 p-4 h-full flex flex-col">
+                <h4 className="text-xl font-semibold text-purple-300 mb-2 min-h-[48px]">
                   C2. OT/ICS &amp; Critical Infrastructure Security
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>
-                    SCADA/PLC/HMI fundamentals, Modbus/DNP3/OPC-UA protocol
-                    security
-                  </li>
+                <div className="space-y-4 text-gray-200 leading-7">
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-1 flex-shrink-0">●</span>
+                    <p className="flex-1 text-justify">
+                      SCADA/PLC/HMI fundamentals and Modbus, DNP3 and OPC-UA
+                      protocol security.
+                    </p>
+                  </div>
 
-                  <li>
-                    IT/OT convergence risks, Purdue Model segmentation, IEC
-                    62443 framework
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-1 flex-shrink-0">●</span>
+                    <p className="flex-1 text-justify">
+                      IT/OT convergence risks, Purdue Model segmentation and IEC
+                      62443 security framework.
+                    </p>
+                  </div>
 
-                  <li>
-                    Simulated attacks and defenses on a tabletop ICS testbed
-                    (open-source SCADA/PLC emulators) — strictly in an
-                    air-gapped lab
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-1 flex-shrink-0">●</span>
+                    <p className="flex-1 text-justify">
+                      Simulated attacks and defenses on an air-gapped ICS
+                      laboratory using open-source SCADA and PLC emulators.
+                    </p>
+                  </div>
 
-                  <li>
-                    Incident response for OT environments, safety-vs-security
-                    tradeoffs
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-300 mt-1 flex-shrink-0">●</span>
+                    <p className="flex-1 text-justify">
+                      Incident response for OT environments and
+                      safety-versus-security trade-offs.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* C3 */}
-              <div className="rounded-2xl bg-emerald-500/10 border border-emerald-400/30 p-6">
-                <h4 className="text-xl font-semibold text-emerald-300 mb-5">
+              {/* ===================== C3 ===================== */}
+              <div className="rounded-2xl bg-emerald-500/10 border border-emerald-400/30 p-4 h-full flex flex-col">
+                <h4 className="text-xl font-semibold text-purple-300 mb-2 min-h-[48px]">
                   C3. Digital Twin &amp; Industry 5.0/6.0 Security
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>
-                    Security of digital-twin architectures: data-synchronisation
-                    channels, twin-to-physical command paths, model integrity
-                  </li>
+                <div className="space-y-4 text-gray-200 leading-7">
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Security of digital-twin architectures including
+                      synchronization, command paths and model integrity.
+                    </p>
+                  </div>
 
-                  <li>
-                    Attack scenarios: twin desynchronisation, sensor spoofing
-                    feeding false state into the twin,
-                    twin-as-attack-simulation-platform for adversaries
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Twin desynchronization, sensor spoofing and misuse of
+                      digital twins as attack-simulation platforms.
+                    </p>
+                  </div>
 
-                  <li>
-                    Human-centric Industry 5.0 considerations: securing
-                    collaborative robots (cobots), human-machine interface trust
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-emerald-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Human-centric Industry 5.0 concepts, collaborative robot
+                      (cobot) security and human-machine trust.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* C4 */}
-              <div className="rounded-2xl bg-orange-500/10 border border-orange-400/30 p-6">
-                <h4 className="text-xl font-semibold text-orange-300 mb-5">
+              {/* ===================== C4 ===================== */}
+              <div className="rounded-2xl bg-orange-500/10 border border-orange-400/30 p-4 h-full flex flex-col">
+                <h4 className="text-xl font-semibold text-purple-300 mb-2 min-h-[48px]">
                   C4. Quantum Security
                 </h4>
 
-                <ul className="space-y-4 text-gray-200 leading-7 list-disc list-inside">
-                  <li>
-                    Quantum-computing threat to classical cryptography
-                    (Shor&apos;s/Grover&apos;s algorithm implications), "harvest
-                    now, decrypt later" risk
-                  </li>
+                <div className="space-y-4 text-gray-200 leading-7">
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Quantum computing threats to classical cryptography,
+                      including Shor's and Grover's algorithms and the "harvest
+                      now, decrypt later" risk.
+                    </p>
+                  </div>
 
-                  <li>
-                    Post-quantum cryptography (PQC) standards (NIST-selected
-                    algorithms), migration planning
-                  </li>
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Post-quantum cryptography (PQC), NIST-selected algorithms
+                      and migration planning.
+                    </p>
+                  </div>
 
-                  <li>
-                    Quantum key distribution (QKD) concepts and current
-                    limitations; hands-on with PQC libraries (liboqs/Open
-                    Quantum Safe) in sample applications
-                  </li>
-                </ul>
+                  <div className="flex items-start gap-3">
+                    <span className="text-orange-300 mt-1 flex-shrink-0">
+                      ●
+                    </span>
+                    <p className="flex-1 text-justify">
+                      Quantum key distribution (QKD) concepts and hands-on
+                      experience using PQC libraries such as liboqs and Open
+                      Quantum Safe.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

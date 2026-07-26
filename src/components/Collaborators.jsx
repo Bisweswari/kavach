@@ -29,7 +29,7 @@ function Collaborators() {
   return (
     <section className="py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-4">Collaborators</h2>
+        <h2 className="text-4xl font-bold text-center mb-2">Collaborators</h2>
 
         <p className="text-center text-gray-300 max-w-2xl mx-auto mb-12">
           We sincerely acknowledge our collaborating organizations for their
