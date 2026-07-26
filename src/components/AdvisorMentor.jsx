@@ -10,6 +10,20 @@ function AdvisorMentor() {
     {
       image: "/advisor2.jpg",
       name: "Dr. XYZ ABC",
+      designation: "Professor",
+      organization: "KIIT Deemed to be University",
+      email: "xyz@kiit.ac.in",
+    },
+    {
+      image: "/advisor3.jpg",
+      name: "Dr. ABC XYZ",
+      designation: "Associate Professor",
+      organization: "KIIT Deemed to be University",
+      email: "abc@kiit.ac.in",
+    },
+    {
+      image: "/advisor4.jpg",
+      name: "Dr. XYZ ABC",
       designation: "Associate Professor",
       organization: "KIIT Deemed to be University",
       email: "xyz@kiit.ac.in",
