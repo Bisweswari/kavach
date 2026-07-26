@@ -57,7 +57,7 @@ function VisionMission() {
               <h3 className="text-2xl font-bold">Our Vision</h3>
             </div>
 
-            <p className="text-lg leading-8 text-gray-300">
+            <p className="text-lg leading-8 text-gray-300 text-justify break-words hyphens-auto">
               To establish the School of Computer Applications as a recognised
               regional centre of excellence for cyber defense, producing
               graduates and applied research capable of protecting industry and
@@ -100,7 +100,7 @@ function VisionMission() {
                     </div>
 
                     <div className="flex-1">
-                      <p className="text-gray-300 leading-7">
+                      <p className="text-gray-300 leading-7 text-justify break-words hyphens-auto">
                         {item.description}
                       </p>
                     </div>
