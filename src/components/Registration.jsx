@@ -19,7 +19,7 @@ function Registration() {
           {/* Register Button */}
           <div className="absolute -top-6 sm:-top-4 md:-top-3 left-1/2 -translate-x-1/2">
             <a
-              href="https://forms.gle/ZMtMunDf55TqYF9p8"
+              href="https://forms.gle/NJFqTPFkpq5owQ2F8"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 sm:px-10 md:px-14 py-3 md:py-4
@@ -34,20 +34,16 @@ function Registration() {
           </div>
 
           {/* Information */}
-          <div className="space-y-5 text-gray-800 text-base md:text-lg leading-relaxed">
+          <div className="space-y-2 text-gray-800 text-base md:text-lg leading-relaxed">
             <p>
-              Interested students (B.Tech, M.Tech, MCA, MSc, BSc, BCA, and PhD
-              scholars) can register by paying a fee of ₹500 (Rupees Five
-              Hundred only), either through the provided bank details or via the
-              QR code. After completing the payment, students must fill out the
-              given Google Form for registration by providing the Transaction
-              ID, date of payment, and uploading proof of the transaction.
+              Interested students (BCA, MCA, and PhD scholars) must fill out the
+              given Google Form for successful registration.
             </p>
 
             <p>
               🔗 Google Form Link:{" "}
               <a
-                href="https://forms.gle/ZMtMunDf55TqYF9p8"
+                href="https://forms.gle/NJFqTPFkpq5owQ2F8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-500 underline hover:text-pink-600 transition"

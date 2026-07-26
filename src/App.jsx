@@ -4,6 +4,9 @@ import Overview from "./components/Overview";
 import VisionMission from "./components/VisionMission";
 import Details from "./components/Details";
 import Coordinator from "./components/Coordinator";
+import Collaborators from "./components/Collaborators";
+import AdvisorMentor from "./components/AdvisorMentor";
+import Volunteers from "./components/Volunteers";
 import Registration from "./components/Registration";
 import Footer from "./components/Footer";
 
@@ -21,6 +24,12 @@ function App() {
       <Details />
 
       <Coordinator />
+
+      <Collaborators />
+
+      <AdvisorMentor />
+
+      <Volunteers />
 
       <Registration />
 

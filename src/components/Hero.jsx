@@ -48,7 +48,7 @@ function Hero() {
         </h1>
 
         <h3 className="text-gray-300 tracking-[3px] md:tracking-[6px] text-3xl md:text-4xl font-bold mb-4 md:mb-6 animate-fadeIn">
-          (Cyber Security Society)
+          (Cybersecurity Society)
         </h3>
 
         {/* <div className="mt-6 animate-fadeIn delay-200">

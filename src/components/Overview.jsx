@@ -57,7 +57,7 @@ function Overview() {
               <img
                 src="/scam.jpg"
                 alt="Workshop Image"
-                className="w-full max-w-md h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl shadow-2xl 
+                className="w-full max-w-md h-[300px] md:h-[360px] lg:h-[350px] rounded-3xl shadow-2xl 
                            border border-white/20 
                            hover:scale-105 transition duration-500"
               />

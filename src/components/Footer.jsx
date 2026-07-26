@@ -8,14 +8,14 @@ function Footer() {
         </h2>
 
         <p className="text-cyan-400 text-lg font-medium mb-4">
-          Cyber Security Society
+          Cybersecurity Society
         </p>
 
         {/* Motto */}
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-cyan-300 font-medium">
-          <span>🛡️ Protect</span>
-          <span>•</span>
           <span>💡 Learn</span>
+          <span>•</span>
+          <span>🛡️ Protect</span>
           <span>•</span>
           <span>🚀 Innovate</span>
         </div>
@@ -25,7 +25,7 @@ function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-400">
-          <p>© 2026 KAVACH – Cyber Security Society. All Rights Reserved.</p>
+          <p>© 2026 KAVACH – Cybersecurity Society. All Rights Reserved.</p>
 
           <p>School of Computer Applications • KIIT Deemed to be University</p>
         </div>
