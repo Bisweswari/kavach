@@ -36,7 +36,7 @@ function Registration() {
           {/* Information */}
           <div className="space-y-2 text-gray-800 text-base md:text-lg leading-relaxed">
             <p>
-              Interested students (BCA, MCA, and PhD scholars) must fill out the
+              Interested students must fill out the
               given Google Form for successful registration.
             </p>
 
