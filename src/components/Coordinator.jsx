@@ -40,7 +40,7 @@ function Coordinator() {
       image: "/Dr. Manoj Ranjan Mishra.jpeg",
       designation: (
         <>
-          Assistant Professor <br />
+          Assosiate Professor <br />
           School of Computer Applications <br />
           KIIT Deemed to be University <br />
           Bhubaneswar, India
