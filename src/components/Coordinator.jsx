@@ -48,7 +48,7 @@ function Coordinator() {
       ),
       contact: (
         <>
-          <strong>Email:</strong> coordinator@kiit.ac.in
+          <strong>Email:</strong> mrmishrafca@kiit.ac.in
         </>
       ),
     },
